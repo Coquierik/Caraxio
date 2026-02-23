@@ -6,7 +6,7 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT, COLOR_ORANGE, COLOR_YELLOW, MENU_OPTION, COLOR_WHITE
+from code.Const import WIN_WIDTH, WIN_HEIGHT, COLOR_ORANGE, MENU_OPTION, COLOR_WHITE
 
 
 class Menu:
