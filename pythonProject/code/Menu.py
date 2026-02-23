@@ -6,7 +6,7 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT, COLOR_ORANGE, COLOR_YELLOW, MENU_OPTION, COLOR_WHITE
+from code.Const import WIN_WIDTH, WIN_HEIGHT, COLOR_ORANGE, MENU_OPTION, COLOR_WHITE
 
 
 class Menu:
@@ -17,11 +17,11 @@ class Menu:
 
     def run(self, ):
         pygame.mixer.music.load('./asset/Menu.mp3')
-        pygame.mixer.music.play(-1) #-1 é o parametro para a música tocar infinitamente
+        pygame.mixer.music.play(-1) #-1 is the parametters to play the music in loop
         while True: #looping to loading the img
             self.window.blit(source=self.surf, dest=self.rect)  # telling it to draw the img into the rectangle
-            self.menu_text(50, "Mountain", (COLOR_ORANGE), ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, "Shooter", (COLOR_ORANGE), ((WIN_WIDTH / 2), 120))
+            self.menu_text(50, "Mountain", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "Shooter", COLOR_WHITE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 25 * i))
