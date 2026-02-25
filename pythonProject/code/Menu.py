@@ -12,7 +12,7 @@ from code.Const import WIN_WIDTH, COLOR_ORANGE, COLOR_YELLOW, MENU_OPTION, COLOR
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/MenuBg.png') #calling the menu image
+        self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha() #calling the menu image
         self.rect = self.surf.get_rect(left=0, top=0) #where to start the rectangle (img)
 
     def run(self, ):
