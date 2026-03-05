@@ -15,7 +15,7 @@ class Menu:
         self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha() #calling the menu image
         self.rect = self.surf.get_rect(left=0, top=0) #where to start the rectangle (img)
 
-    def run(self, ):
+    def run(self):
         menu_option = 0
         pygame.mixer.music.load('./asset/Menu.mp3')
         pygame.mixer.music.play(-1) #-1 is the parametters to play the music in loop

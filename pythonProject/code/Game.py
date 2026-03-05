@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import sys
 from idlelib.mainmenu import menudefs
 
 import pygame
@@ -37,4 +38,5 @@ class Game:
                 pygame.quit() #close window
                 quit() #end game
             else:
-                pass
+                pygame.quit()
+                sys.exit()

@@ -105,14 +105,12 @@ ENTITY_SPEED = {
     'Enemy2Shot': 3,
 }
 
-
 ENTITY_SHOT_DELAY = {
     'Player1': 20,
     'Player2': 15,
     'Enemy1': 100,
     'Enemy2': 200,
 }
-
 
 #M
 MENU_OPTION = ('NEW GAME 1P',
@@ -165,5 +163,3 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              8: (WIN_WIDTH / 2, 270),
              9: (WIN_WIDTH / 2, 290)
              }
-
-
